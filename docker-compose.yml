@@ -1,0 +1,15 @@
+version: '3.8'
+name: navy
+services:
+  ports:
+    build:
+      context: .
+      dockerfile: docker/port/Dockerfile
+    ports:
+        - ${PORT}:${PORT}
+    env_file:
+      - .env
+  redis:
+    image: redis:6.0.9-alpine
+    ports:
+      - ${REDIS_PORT}:${REDIS_PORT}
