@@ -16,6 +16,11 @@ various aspects of navy operations, including personnel, vessels, missions, logi
 
 ## Usage
 
+### Building the application docker image
+
+```bash
+make docker-build
+```
 ### Running the application
 
 To run the application, simply run the following command from the root directory of the project:
